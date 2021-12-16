@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, Output } from '@angular/core';
+import { Persona } from '../interface/dbz.interface';
+
 
 @Component({
   selector: 'app-main-page',
@@ -8,4 +10,27 @@ import { Component } from '@angular/core';
 
 export class MainPageComponent {
 
+  personajes: Persona[] = [
+    {
+      nombre: 'Krillin',
+      poder: 800
+    },
+    {
+      nombre: 'Goku',
+      poder: 15000
+    },
+    {
+      nombre: 'Vegeta',
+      poder: 8500
+    },
+  ]
+
+  nuevo: Persona = {
+    nombre: '',
+    poder: 0
+  }
+
+  agregarNuevoPersonaje( event: Persona){
+    this.personajes.push(event)
+  }
 }

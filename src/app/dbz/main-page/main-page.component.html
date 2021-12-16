@@ -1,1 +1,12 @@
-<h1>Soy la mera vena xD</h1>
+<h1>Peleadores de Dragon Ball Z</h1>
+<hr>
+
+<div class="row">
+    <div class="col">
+        <app-personajes [personajes]="personajes" ></app-personajes>
+    </div>
+
+    <div class="col">
+        <app-agregar-p [nuevo]="nuevo" (onNewCharacter)="agregarNuevoPersonaje( $event )"></app-agregar-p>
+    </div>
+</div>

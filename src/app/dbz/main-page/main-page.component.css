@@ -1,0 +1,17 @@
+.row{
+    display: flex;
+    justify-content: space-between;
+}
+.col{
+    flex-grow: 1;
+}
+.col:last-child{
+    margin-left: 20px;
+}
+
+input{
+    display: block;
+    padding: 10px;
+    margin: 10px;
+    width: 100%;
+}
